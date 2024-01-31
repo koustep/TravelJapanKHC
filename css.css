@@ -1,0 +1,148 @@
+/*
+	Stylesheet for Travel Japan Site
+	Author: Hio Cheng Kou
+	Date: 2023-02-11
+
+	Change log:
+	-2023-02-11 -  Initial file
+*/
+
+/*  The 'selector' is before the opening curly bracket */
+
+/*
+	Principles
+	1. Inheritance
+	2. Specificity
+	3. Last Rule
+*/
+
+/*
+	Types of selectors
+
+	1. "Type" (Tag) Selector
+*/
+
+body {
+	/*
+		between the curly brackets - declration(s)
+		Property: Value
+	*/
+	background-color: #A47474;
+	font-family: Georgia, "serif";
+	font-size: 16px;
+}
+
+#main-content p {
+	background-color: #838A83
+}
+
+h1, h2, h3 {
+	font-family: Verdana, "sans-serif";
+}
+
+/*
+	2. ID Selector
+*/
+#header > #navigation ul {
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+}
+#header > #navigation ul li {
+	display: inline;
+	margin-right: 10px;
+}
+#header > #navigation a {
+	background-color: #E5D0D0;
+	padding: 10px;
+	text-decoration: uppercase;
+	color: black;
+}
+#header > #navigation a:hover {
+	background-color: #3D1818;
+	color: white;
+	border-top:3px solid white;
+	text-decoration: none;
+}
+#header h1 {
+	text-align: center;
+}
+#header {
+	border-bottom: 3px solid black;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #5D2C2D;
+	height: 140px;
+}
+#main-content {
+	margin-top: 150px;
+}
+#main-content > #cover > img {
+	max-width: 100%;
+}
+#top-destinations {
+	overflow: auto;
+}
+#wrapper {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*
+	3. Class Selector
+*/
+#top-destinations > .destination {
+	float: left;
+	width: 580px;
+	height: 550px;
+}
+#top-destinations > .destination > img {
+	max-width: 100%;
+}
+.mr-40 {
+	margin-right: 40px
+}
+#footer {
+	margin-top: 100px;
+	overflow: auto;
+}
+#footer > .footer-column {
+	float: left;
+	width: 150px;
+	margin-right: 15px;
+}
+#footer p {
+	clear: left;
+}
+/*
+	4. Child Selector
+*/
+#featured-city > img {
+	
+}
+
+#popular-itenraries-of-Nagoya > p {
+	
+}
+
+#header > #navigation > ul > li > a {
+	
+}
+
+/*
+	5. Descendant Selector
+*/
+#header a {
+	
+
+}
+
+
+
+
+
+
+
+
